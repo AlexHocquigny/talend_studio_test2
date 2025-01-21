@@ -607,22 +607,13 @@
       <column comment="" key="false" length="0" name="Quantity1" nullable="true" originalDbColumnName="Quantity" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Object" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="920" posY="80">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="360" posY="200">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_1" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
-    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_OPEd8NTAEe-Ch6ybbPAXXw-tMap_1-PREVIEW.bmp"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
-    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
-    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
-    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
-    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="metadata" name="Header1">
+    <metadata connector="FLOW" label="metadata" name="Out1">
       <column comment="" key="false" length="0" name="SenderID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="ReceiverID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="DateStamp" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -666,59 +657,131 @@
       <column comment="" key="false" length="0" name="DateStamp3" nullable="true" originalDbColumnName="DateStamp" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Quantity1" nullable="true" originalDbColumnName="Quantity" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Object" usefulColumn="true"/>
     </metadata>
-    <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
-      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="Header1">
-        <mapperTableEntries name="SenderID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ReceiverID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="DateStamp" type="id_String" nullable="true"/>
-        <mapperTableEntries name="VersionID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ControlNumber" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Test" type="id_String" nullable="true"/>
-        <mapperTableEntries name="DocumentType" expression="" type="id_String" nullable="true"/>
-        <mapperTableEntries name="type" type="id_String" nullable="true"/>
-        <mapperTableEntries name="DocumentNumber" expression="copyOfORH.Ordernr" type="id_Object" nullable="true"/>
-        <mapperTableEntries name="DateStamp1" expression="copyOfORH.Orderdat " type="id_String" nullable="true"/>
-        <mapperTableEntries name="type1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="type2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PartnerName1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PartnerName2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PartnerName3" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PartnerName4" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PartnerAddress" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PartnerPostalCode" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PartnerCity" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PartnerCountryCode" type="id_String" nullable="true"/>
-        <mapperTableEntries name="type3" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ContactName" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ContactName2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ContactPhone" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ContactFax" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ContactMail" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CompleteDelivery" type="id_String" nullable="true"/>
-        <mapperTableEntries name="type4" type="id_String" nullable="true"/>
-        <mapperTableEntries name="LineNumber" type="id_String" nullable="true"/>
-        <mapperTableEntries name="type5" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ProductDescription" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Quantity" type="id_Object" nullable="true"/>
-        <mapperTableEntries name="Unit" type="id_String" nullable="true"/>
-        <mapperTableEntries name="type6" type="id_String" nullable="true"/>
-        <mapperTableEntries name="type7" type="id_String" nullable="true"/>
-        <mapperTableEntries name="DocumentNumber1" type="id_Object" nullable="true"/>
-        <mapperTableEntries name="DateStamp2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="LineNumber1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ComponentLineNumber" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Status" type="id_String" nullable="true"/>
-        <mapperTableEntries name="DateStamp3" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Quantity1" type="id_Object" nullable="true"/>
-      </outputTables>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="copyOfORH" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="RecType" type="id_String" xpath="copyOfORH/RecType" nullable="false"/>
+        <nodes name="Ordernr" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.0" xpath="copyOfORH/Ordernr" nullable="false"/>
+        <nodes name="Ordersnr" type="id_String" xpath="copyOfORH/Ordersnr"/>
+        <nodes name="Orderdat" type="id_String" xpath="copyOfORH/Orderdat" nullable="false"/>
+        <nodes name="ExOrdernr" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.1" xpath="copyOfORH/ExOrdernr"/>
+        <nodes name="ExtApplOrd" type="id_String" xpath="copyOfORH/ExtApplOrd"/>
+        <nodes name="Orderref1" type="id_String" xpath="copyOfORH/Orderref1"/>
+        <nodes name="Orderref2" type="id_String" xpath="copyOfORH/Orderref2"/>
+        <nodes name="Ordertxt1" type="id_String" xpath="copyOfORH/Ordertxt1"/>
+        <nodes name="Ordertxt2" type="id_String" xpath="copyOfORH/Ordertxt2"/>
+        <nodes name="Ordertxt3" type="id_String" xpath="copyOfORH/Ordertxt3"/>
+        <nodes name="OrdType" type="id_String" xpath="copyOfORH/OrdType"/>
+        <nodes name="DelDate" type="id_String" xpath="copyOfORH/DelDate"/>
+        <nodes name="SuppEAN" type="id_String" xpath="copyOfORH/SuppEAN"/>
+        <nodes name="SuppCode" type="id_String" xpath="copyOfORH/SuppCode"/>
+        <nodes name="SuppName1" type="id_String" xpath="copyOfORH/SuppName1"/>
+        <nodes name="SuppName2" type="id_String" xpath="copyOfORH/SuppName2"/>
+        <nodes name="SuppAdrs1" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.2" xpath="copyOfORH/SuppAdrs1"/>
+        <nodes name="SuppAdrs2" type="id_String" xpath="copyOfORH/SuppAdrs2"/>
+        <nodes name="SuppCity" type="id_String" xpath="copyOfORH/SuppCity"/>
+        <nodes name="SuppZIP" type="id_String" xpath="copyOfORH/SuppZIP"/>
+        <nodes name="SuppCntry" type="id_String" xpath="copyOfORH/SuppCntry"/>
+        <nodes name="SuppVATID" type="id_String" xpath="copyOfORH/SuppVATID"/>
+        <nodes name="SuppKvKnr" type="id_String" xpath="copyOfORH/SuppKvKnr"/>
+        <nodes name="BuyrEAN" type="id_String" xpath="copyOfORH/BuyrEAN"/>
+        <nodes name="BuyrCode" type="id_String" xpath="copyOfORH/BuyrCode"/>
+        <nodes name="BuyrName1" type="id_String" xpath="copyOfORH/BuyrName1"/>
+        <nodes name="BuyrName2" type="id_String" xpath="copyOfORH/BuyrName2"/>
+        <nodes name="BuyrAdrs1" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.3" xpath="copyOfORH/BuyrAdrs1"/>
+        <nodes name="BuyrAdrs2" type="id_String" xpath="copyOfORH/BuyrAdrs2"/>
+        <nodes name="BuyrCity" type="id_String" xpath="copyOfORH/BuyrCity"/>
+        <nodes name="BuyrZIP" type="id_String" xpath="copyOfORH/BuyrZIP"/>
+        <nodes name="BuyrCntry" type="id_String" xpath="copyOfORH/BuyrCntry"/>
+        <nodes name="BuyrMAdrs" type="id_String" xpath="copyOfORH/BuyrMAdrs"/>
+        <nodes name="BuyrMCity" type="id_String" xpath="copyOfORH/BuyrMCity"/>
+        <nodes name="BuyrMZip" type="id_String" xpath="copyOfORH/BuyrMZip"/>
+        <nodes name="BuyrVATID" type="id_String" xpath="copyOfORH/BuyrVATID"/>
+        <nodes name="BuyrKvKnr" type="id_String" xpath="copyOfORH/BuyrKvKnr"/>
+        <nodes name="DeliEAN" type="id_String" xpath="copyOfORH/DeliEAN"/>
+        <nodes name="DeliCode" type="id_String" xpath="copyOfORH/DeliCode"/>
+        <nodes name="DeliName1" type="id_String" xpath="copyOfORH/DeliName1"/>
+        <nodes name="DeliName2" type="id_String" xpath="copyOfORH/DeliName2"/>
+        <nodes name="DeliAdrs1" type="id_String" xpath="copyOfORH/DeliAdrs1"/>
+        <nodes name="DeliAdrs2" type="id_String" xpath="copyOfORH/DeliAdrs2"/>
+        <nodes name="DeliCity" type="id_String" xpath="copyOfORH/DeliCity"/>
+        <nodes name="DeliZIP" type="id_String" xpath="copyOfORH/DeliZIP"/>
+        <nodes name="DeliCntry" type="id_String" xpath="copyOfORH/DeliCntry"/>
+        <nodes name="DeliVATID" type="id_String" xpath="copyOfORH/DeliVATID"/>
+        <nodes name="CostBearer" type="id_String" xpath="copyOfORH/CostBearer"/>
+        <nodes name="Crddays" type="id_Integer" xpath="copyOfORH/Crddays"/>
+        <nodes name="Crdperc" type="id_Integer" xpath="copyOfORH/Crdperc"/>
+        <nodes name="Crdcode" type="id_String" xpath="copyOfORH/Crdcode"/>
+        <nodes name="CostCtrNme" type="id_String" xpath="copyOfORH/CostCtrNme"/>
+        <nodes name="CcdCard" type="id_String" xpath="copyOfORH/CcdCard" nullable="false"/>
+        <nodes name="ColCcdCardNbr" type="id_String" xpath="copyOfORH/ColCcdCardNbr"/>
+        <nodes name="CcdExpDt" type="id_String" xpath="copyOfORH/CcdExpDt"/>
+        <nodes name="CcdCardType" type="id_String" xpath="copyOfORH/CcdCardType"/>
+        <nodes name="CcdCardHold" type="id_String" xpath="copyOfORH/CcdCardHold"/>
+        <nodes name="OrdCurrency" type="id_String" xpath="copyOfORH/OrdCurrency"/>
+        <nodes name="OrdExcAmnt" type="id_Integer" xpath="copyOfORH/OrdExcAmnt"/>
+        <nodes name="OrdExcAmntS" type="id_String" xpath="copyOfORH/OrdExcAmntS"/>
+        <nodes name="OrdVATAmnt" type="id_Integer" xpath="copyOfORH/OrdVATAmnt"/>
+        <nodes name="OrdVATAmntS" type="id_String" xpath="copyOfORH/OrdVATAmntS"/>
+        <nodes name="OrdIncAmnt" type="id_Integer" xpath="copyOfORH/OrdIncAmnt"/>
+        <nodes name="OrdIncAmntS" type="id_String" xpath="copyOfORH/OrdIncAmntS"/>
+        <nodes name="ShipToRef" type="id_String" xpath="copyOfORH/ShipToRef"/>
+        <nodes name="StructRef" type="id_String" xpath="copyOfORH/StructRef"/>
+        <nodes name="BuyrMCntr" type="id_String" xpath="copyOfORH/BuyrMCntr"/>
+      </inputTrees>
+      <outputTrees name="Out1">
+        <nodes name="SenderID" type="id_String" xpath="Out1/SenderID"/>
+        <nodes name="ReceiverID" type="id_String" xpath="Out1/ReceiverID"/>
+        <nodes name="DateStamp" type="id_String" xpath="Out1/DateStamp"/>
+        <nodes name="VersionID" type="id_String" xpath="Out1/VersionID"/>
+        <nodes name="ControlNumber" type="id_String" xpath="Out1/ControlNumber"/>
+        <nodes name="Test" type="id_String" xpath="Out1/Test"/>
+        <nodes name="DocumentType" type="id_String" xpath="Out1/DocumentType"/>
+        <nodes name="type" expression="" type="id_String" xpath="Out1/type"/>
+        <nodes name="DocumentNumber" expression="copyOfORH.Ordernr copyOfORH.ExOrdernr" type="id_Object" incomingConnections="//@node.3/@nodeData/@connections.0 //@node.3/@nodeData/@connections.1" xpath="Out1/DocumentNumber"/>
+        <nodes name="DateStamp1" type="id_String" xpath="Out1/DateStamp1"/>
+        <nodes name="type1" type="id_String" xpath="Out1/type1"/>
+        <nodes name="type2" type="id_String" xpath="Out1/type2"/>
+        <nodes name="PartnerName1" type="id_String" xpath="Out1/PartnerName1"/>
+        <nodes name="PartnerName2" type="id_String" xpath="Out1/PartnerName2"/>
+        <nodes name="PartnerName3" type="id_String" xpath="Out1/PartnerName3"/>
+        <nodes name="PartnerName4" type="id_String" xpath="Out1/PartnerName4"/>
+        <nodes name="PartnerAddress" expression="copyOfORH.SuppAdrs1 copyOfORH.BuyrAdrs1" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.2 //@node.3/@nodeData/@connections.3" xpath="Out1/PartnerAddress"/>
+        <nodes name="PartnerPostalCode" type="id_String" xpath="Out1/PartnerPostalCode"/>
+        <nodes name="PartnerCity" type="id_String" xpath="Out1/PartnerCity"/>
+        <nodes name="PartnerCountryCode" type="id_String" xpath="Out1/PartnerCountryCode"/>
+        <nodes name="type3" type="id_String" xpath="Out1/type3"/>
+        <nodes name="ContactName" type="id_String" xpath="Out1/ContactName"/>
+        <nodes name="ContactName2" type="id_String" xpath="Out1/ContactName2"/>
+        <nodes name="ContactPhone" type="id_String" xpath="Out1/ContactPhone"/>
+        <nodes name="ContactFax" type="id_String" xpath="Out1/ContactFax"/>
+        <nodes name="ContactMail" type="id_String" xpath="Out1/ContactMail"/>
+        <nodes name="CompleteDelivery" type="id_String" xpath="Out1/CompleteDelivery"/>
+        <nodes name="type4" type="id_String" xpath="Out1/type4"/>
+        <nodes name="LineNumber" type="id_String" xpath="Out1/LineNumber"/>
+        <nodes name="type5" type="id_String" xpath="Out1/type5"/>
+        <nodes name="ProductDescription" type="id_String" xpath="Out1/ProductDescription"/>
+        <nodes name="Quantity" type="id_Object" xpath="Out1/Quantity"/>
+        <nodes name="Unit" type="id_String" xpath="Out1/Unit"/>
+        <nodes name="type6" type="id_String" xpath="Out1/type6"/>
+        <nodes name="type7" type="id_String" xpath="Out1/type7"/>
+        <nodes name="DocumentNumber1" type="id_Object" xpath="Out1/DocumentNumber1"/>
+        <nodes name="DateStamp2" type="id_String" xpath="Out1/DateStamp2"/>
+        <nodes name="LineNumber1" type="id_String" xpath="Out1/LineNumber1"/>
+        <nodes name="ComponentLineNumber" type="id_String" xpath="Out1/ComponentLineNumber"/>
+        <nodes name="Status" type="id_String" xpath="Out1/Status"/>
+        <nodes name="DateStamp3" type="id_String" xpath="Out1/DateStamp3"/>
+        <nodes name="Quantity1" type="id_Object" xpath="Out1/Quantity1"/>
+      </outputTrees>
+      <varTables name="Var" minimized="true"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.1" target="//@node.3/@nodeData/@outputTrees.0/@nodes.8"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.4" target="//@node.3/@nodeData/@outputTrees.0/@nodes.8"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.17" target="//@node.3/@nodeData/@outputTrees.0/@nodes.16"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.28" target="//@node.3/@nodeData/@outputTrees.0/@nodes.16"/>
     </nodeData>
   </node>
-  <node componentName="tFileOutputXML" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1080" posY="80" sizeX="41" sizeY="40">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputXML_1" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/AlexHocquigny/Documents/UFP/Target Files/OrderResponseHeader.xml&quot;"/>
+  <node componentName="tFileOutputXML" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="560" posY="200">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputXML_5" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/AlexHocquigny/Documents/UFP/Target Files/OrderResponseTextTest.xml&quot;"/>
     <elementParameter field="CHECK" name="INPUT_IS_DOCUMENT" value="false"/>
     <elementParameter field="COLUMN_LIST" name="DOCUMENT_COL" value="SenderID" show="false"/>
     <elementParameter field="TEXT" name="ROW_TAG" value="&quot;row&quot;"/>
@@ -758,7 +821,7 @@
       <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="26"/>
       <elementValue elementRef="LABEL" value="&quot;label&quot;" id="27"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="type" id="28"/>
-      <elementValue elementRef="AS_ATTRIBUTE" value="true" id="29"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="29"/>
       <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="30"/>
       <elementValue elementRef="LABEL" value="&quot;label&quot;" id="31"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="DocumentNumber" id="32"/>
@@ -910,7 +973,7 @@
     <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
     <elementParameter field="CHECK" name="TRIM" value="false" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="metadata" name="tFileOutputXML_1">
+    <metadata connector="FLOW" label="metadata" name="tFileOutputXML_5">
       <column comment="" key="false" length="0" name="SenderID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="ReceiverID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="DateStamp" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -954,6 +1017,113 @@
       <column comment="" key="false" length="0" name="DateStamp3" nullable="true" originalDbColumnName="DateStamp" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Quantity1" nullable="true" originalDbColumnName="Quantity" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Object" usefulColumn="true"/>
     </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="920" posY="80">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_OPEd8NTAEe-Ch6ybbPAXXw-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="Header1">
+      <column comment="" key="false" length="0" name="SenderID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ReceiverID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DateStamp" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="VersionID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ControlNumber" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Test" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DocumentType" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DocumentNumber" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Object" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DateStamp1" nullable="true" originalDbColumnName="DateStamp" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="type1" nullable="true" originalDbColumnName="type" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="type2" nullable="true" originalDbColumnName="type" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PartnerName1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PartnerName2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PartnerName3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PartnerName4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PartnerAddress" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PartnerPostalCode" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PartnerCity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PartnerCountryCode" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="type3" nullable="true" originalDbColumnName="type" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ContactName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ContactName2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ContactPhone" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ContactFax" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ContactMail" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CompleteDelivery" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="type4" nullable="true" originalDbColumnName="type" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="LineNumber" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="type5" nullable="true" originalDbColumnName="type" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ProductDescription" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Quantity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Object" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Unit" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="type6" nullable="true" originalDbColumnName="type" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="type7" nullable="true" originalDbColumnName="type" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DocumentNumber1" nullable="true" originalDbColumnName="DocumentNumber" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Object" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DateStamp2" nullable="true" originalDbColumnName="DateStamp" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="LineNumber1" nullable="true" originalDbColumnName="LineNumber" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ComponentLineNumber" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DateStamp3" nullable="true" originalDbColumnName="DateStamp" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Quantity1" nullable="true" originalDbColumnName="Quantity" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Object" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="Header1">
+        <mapperTableEntries name="SenderID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ReceiverID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DateStamp" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VersionID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ControlNumber" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Test" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DocumentType" expression="" type="id_String" nullable="true"/>
+        <mapperTableEntries name="type" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DocumentNumber" expression="copyOfORH.Ordernr" type="id_Object" nullable="true"/>
+        <mapperTableEntries name="DateStamp1" expression="copyOfORH.Orderdat " type="id_String" nullable="true"/>
+        <mapperTableEntries name="type1" type="id_String" nullable="true"/>
+        <mapperTableEntries name="type2" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PartnerName1" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PartnerName2" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PartnerName3" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PartnerName4" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PartnerAddress" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PartnerPostalCode" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PartnerCity" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PartnerCountryCode" type="id_String" nullable="true"/>
+        <mapperTableEntries name="type3" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ContactName" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ContactName2" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ContactPhone" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ContactFax" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ContactMail" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CompleteDelivery" type="id_String" nullable="true"/>
+        <mapperTableEntries name="type4" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LineNumber" type="id_String" nullable="true"/>
+        <mapperTableEntries name="type5" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ProductDescription" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Quantity" type="id_Object" nullable="true"/>
+        <mapperTableEntries name="Unit" type="id_String" nullable="true"/>
+        <mapperTableEntries name="type6" type="id_String" nullable="true"/>
+        <mapperTableEntries name="type7" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DocumentNumber1" type="id_Object" nullable="true"/>
+        <mapperTableEntries name="DateStamp2" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LineNumber1" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ComponentLineNumber" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Status" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DateStamp3" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Quantity1" type="id_Object" nullable="true"/>
+      </outputTables>
+    </nodeData>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="920" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
@@ -1999,181 +2169,10 @@
       <column comment="" key="false" length="0" name="Quantity1" nullable="true" originalDbColumnName="Quantity" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Object" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="360" posY="200">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_1" show="false"/>
+  <node componentName="tFileOutputXML" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1080" posY="80" sizeX="41" sizeY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputXML_1" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
-    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="metadata" name="Out1">
-      <column comment="" key="false" length="0" name="SenderID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="ReceiverID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="DateStamp" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="VersionID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="ControlNumber" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="Test" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="DocumentType" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="DocumentNumber" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Object" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="DateStamp1" nullable="true" originalDbColumnName="DateStamp" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="type1" nullable="true" originalDbColumnName="type" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="type2" nullable="true" originalDbColumnName="type" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="PartnerName1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="PartnerName2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="PartnerName3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="PartnerName4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="PartnerAddress" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="PartnerPostalCode" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="PartnerCity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="PartnerCountryCode" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="type3" nullable="true" originalDbColumnName="type" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="ContactName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="ContactName2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="ContactPhone" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="ContactFax" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="ContactMail" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="CompleteDelivery" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="type4" nullable="true" originalDbColumnName="type" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="LineNumber" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="type5" nullable="true" originalDbColumnName="type" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="ProductDescription" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="Quantity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Object" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="Unit" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="type6" nullable="true" originalDbColumnName="type" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="type7" nullable="true" originalDbColumnName="type" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="DocumentNumber1" nullable="true" originalDbColumnName="DocumentNumber" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Object" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="DateStamp2" nullable="true" originalDbColumnName="DateStamp" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="LineNumber1" nullable="true" originalDbColumnName="LineNumber" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="ComponentLineNumber" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="DateStamp3" nullable="true" originalDbColumnName="DateStamp" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="Quantity1" nullable="true" originalDbColumnName="Quantity" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Object" usefulColumn="true"/>
-    </metadata>
-    <nodeData xsi:type="TalendXMLMap:XmlMapData">
-      <inputTrees name="copyOfORH" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-        <nodes name="RecType" type="id_String" xpath="copyOfORH/RecType" nullable="false"/>
-        <nodes name="Ordernr" type="id_String" outgoingConnections="//@node.11/@nodeData/@connections.0" xpath="copyOfORH/Ordernr" nullable="false"/>
-        <nodes name="Ordersnr" type="id_String" xpath="copyOfORH/Ordersnr"/>
-        <nodes name="Orderdat" type="id_String" xpath="copyOfORH/Orderdat" nullable="false"/>
-        <nodes name="ExOrdernr" type="id_String" outgoingConnections="//@node.11/@nodeData/@connections.1" xpath="copyOfORH/ExOrdernr"/>
-        <nodes name="ExtApplOrd" type="id_String" xpath="copyOfORH/ExtApplOrd"/>
-        <nodes name="Orderref1" type="id_String" xpath="copyOfORH/Orderref1"/>
-        <nodes name="Orderref2" type="id_String" xpath="copyOfORH/Orderref2"/>
-        <nodes name="Ordertxt1" type="id_String" xpath="copyOfORH/Ordertxt1"/>
-        <nodes name="Ordertxt2" type="id_String" xpath="copyOfORH/Ordertxt2"/>
-        <nodes name="Ordertxt3" type="id_String" xpath="copyOfORH/Ordertxt3"/>
-        <nodes name="OrdType" type="id_String" xpath="copyOfORH/OrdType"/>
-        <nodes name="DelDate" type="id_String" xpath="copyOfORH/DelDate"/>
-        <nodes name="SuppEAN" type="id_String" xpath="copyOfORH/SuppEAN"/>
-        <nodes name="SuppCode" type="id_String" xpath="copyOfORH/SuppCode"/>
-        <nodes name="SuppName1" type="id_String" xpath="copyOfORH/SuppName1"/>
-        <nodes name="SuppName2" type="id_String" xpath="copyOfORH/SuppName2"/>
-        <nodes name="SuppAdrs1" type="id_String" xpath="copyOfORH/SuppAdrs1"/>
-        <nodes name="SuppAdrs2" type="id_String" xpath="copyOfORH/SuppAdrs2"/>
-        <nodes name="SuppCity" type="id_String" xpath="copyOfORH/SuppCity"/>
-        <nodes name="SuppZIP" type="id_String" xpath="copyOfORH/SuppZIP"/>
-        <nodes name="SuppCntry" type="id_String" xpath="copyOfORH/SuppCntry"/>
-        <nodes name="SuppVATID" type="id_String" xpath="copyOfORH/SuppVATID"/>
-        <nodes name="SuppKvKnr" type="id_String" xpath="copyOfORH/SuppKvKnr"/>
-        <nodes name="BuyrEAN" type="id_String" xpath="copyOfORH/BuyrEAN"/>
-        <nodes name="BuyrCode" type="id_String" xpath="copyOfORH/BuyrCode"/>
-        <nodes name="BuyrName1" type="id_String" xpath="copyOfORH/BuyrName1"/>
-        <nodes name="BuyrName2" type="id_String" xpath="copyOfORH/BuyrName2"/>
-        <nodes name="BuyrAdrs1" type="id_String" xpath="copyOfORH/BuyrAdrs1"/>
-        <nodes name="BuyrAdrs2" type="id_String" xpath="copyOfORH/BuyrAdrs2"/>
-        <nodes name="BuyrCity" type="id_String" xpath="copyOfORH/BuyrCity"/>
-        <nodes name="BuyrZIP" type="id_String" xpath="copyOfORH/BuyrZIP"/>
-        <nodes name="BuyrCntry" type="id_String" xpath="copyOfORH/BuyrCntry"/>
-        <nodes name="BuyrMAdrs" type="id_String" xpath="copyOfORH/BuyrMAdrs"/>
-        <nodes name="BuyrMCity" type="id_String" xpath="copyOfORH/BuyrMCity"/>
-        <nodes name="BuyrMZip" type="id_String" xpath="copyOfORH/BuyrMZip"/>
-        <nodes name="BuyrVATID" type="id_String" xpath="copyOfORH/BuyrVATID"/>
-        <nodes name="BuyrKvKnr" type="id_String" xpath="copyOfORH/BuyrKvKnr"/>
-        <nodes name="DeliEAN" type="id_String" xpath="copyOfORH/DeliEAN"/>
-        <nodes name="DeliCode" type="id_String" xpath="copyOfORH/DeliCode"/>
-        <nodes name="DeliName1" type="id_String" xpath="copyOfORH/DeliName1"/>
-        <nodes name="DeliName2" type="id_String" xpath="copyOfORH/DeliName2"/>
-        <nodes name="DeliAdrs1" type="id_String" xpath="copyOfORH/DeliAdrs1"/>
-        <nodes name="DeliAdrs2" type="id_String" xpath="copyOfORH/DeliAdrs2"/>
-        <nodes name="DeliCity" type="id_String" xpath="copyOfORH/DeliCity"/>
-        <nodes name="DeliZIP" type="id_String" xpath="copyOfORH/DeliZIP"/>
-        <nodes name="DeliCntry" type="id_String" xpath="copyOfORH/DeliCntry"/>
-        <nodes name="DeliVATID" type="id_String" xpath="copyOfORH/DeliVATID"/>
-        <nodes name="CostBearer" type="id_String" xpath="copyOfORH/CostBearer"/>
-        <nodes name="Crddays" type="id_Integer" xpath="copyOfORH/Crddays"/>
-        <nodes name="Crdperc" type="id_Integer" xpath="copyOfORH/Crdperc"/>
-        <nodes name="Crdcode" type="id_String" xpath="copyOfORH/Crdcode"/>
-        <nodes name="CostCtrNme" type="id_String" xpath="copyOfORH/CostCtrNme"/>
-        <nodes name="CcdCard" type="id_String" xpath="copyOfORH/CcdCard" nullable="false"/>
-        <nodes name="ColCcdCardNbr" type="id_String" xpath="copyOfORH/ColCcdCardNbr"/>
-        <nodes name="CcdExpDt" type="id_String" xpath="copyOfORH/CcdExpDt"/>
-        <nodes name="CcdCardType" type="id_String" xpath="copyOfORH/CcdCardType"/>
-        <nodes name="CcdCardHold" type="id_String" xpath="copyOfORH/CcdCardHold"/>
-        <nodes name="OrdCurrency" type="id_String" xpath="copyOfORH/OrdCurrency"/>
-        <nodes name="OrdExcAmnt" type="id_Integer" xpath="copyOfORH/OrdExcAmnt"/>
-        <nodes name="OrdExcAmntS" type="id_String" xpath="copyOfORH/OrdExcAmntS"/>
-        <nodes name="OrdVATAmnt" type="id_Integer" xpath="copyOfORH/OrdVATAmnt"/>
-        <nodes name="OrdVATAmntS" type="id_String" xpath="copyOfORH/OrdVATAmntS"/>
-        <nodes name="OrdIncAmnt" type="id_Integer" xpath="copyOfORH/OrdIncAmnt"/>
-        <nodes name="OrdIncAmntS" type="id_String" xpath="copyOfORH/OrdIncAmntS"/>
-        <nodes name="ShipToRef" type="id_String" xpath="copyOfORH/ShipToRef"/>
-        <nodes name="StructRef" type="id_String" xpath="copyOfORH/StructRef"/>
-        <nodes name="BuyrMCntr" type="id_String" xpath="copyOfORH/BuyrMCntr"/>
-      </inputTrees>
-      <outputTrees name="Out1">
-        <nodes name="SenderID" type="id_String" xpath="Out1/SenderID"/>
-        <nodes name="ReceiverID" type="id_String" xpath="Out1/ReceiverID"/>
-        <nodes name="DateStamp" type="id_String" xpath="Out1/DateStamp"/>
-        <nodes name="VersionID" type="id_String" xpath="Out1/VersionID"/>
-        <nodes name="ControlNumber" type="id_String" xpath="Out1/ControlNumber"/>
-        <nodes name="Test" type="id_String" xpath="Out1/Test"/>
-        <nodes name="DocumentType" type="id_String" xpath="Out1/DocumentType"/>
-        <nodes name="type" expression="" type="id_String" xpath="Out1/type"/>
-        <nodes name="DocumentNumber" expression="copyOfORH.Ordernr copyOfORH.ExOrdernr" type="id_Object" incomingConnections="//@node.11/@nodeData/@connections.0 //@node.11/@nodeData/@connections.1" xpath="Out1/DocumentNumber"/>
-        <nodes name="DateStamp1" type="id_String" xpath="Out1/DateStamp1"/>
-        <nodes name="type1" type="id_String" xpath="Out1/type1"/>
-        <nodes name="type2" type="id_String" xpath="Out1/type2"/>
-        <nodes name="PartnerName1" type="id_String" xpath="Out1/PartnerName1"/>
-        <nodes name="PartnerName2" type="id_String" xpath="Out1/PartnerName2"/>
-        <nodes name="PartnerName3" type="id_String" xpath="Out1/PartnerName3"/>
-        <nodes name="PartnerName4" type="id_String" xpath="Out1/PartnerName4"/>
-        <nodes name="PartnerAddress" type="id_String" xpath="Out1/PartnerAddress"/>
-        <nodes name="PartnerPostalCode" type="id_String" xpath="Out1/PartnerPostalCode"/>
-        <nodes name="PartnerCity" type="id_String" xpath="Out1/PartnerCity"/>
-        <nodes name="PartnerCountryCode" type="id_String" xpath="Out1/PartnerCountryCode"/>
-        <nodes name="type3" type="id_String" xpath="Out1/type3"/>
-        <nodes name="ContactName" type="id_String" xpath="Out1/ContactName"/>
-        <nodes name="ContactName2" type="id_String" xpath="Out1/ContactName2"/>
-        <nodes name="ContactPhone" type="id_String" xpath="Out1/ContactPhone"/>
-        <nodes name="ContactFax" type="id_String" xpath="Out1/ContactFax"/>
-        <nodes name="ContactMail" type="id_String" xpath="Out1/ContactMail"/>
-        <nodes name="CompleteDelivery" type="id_String" xpath="Out1/CompleteDelivery"/>
-        <nodes name="type4" type="id_String" xpath="Out1/type4"/>
-        <nodes name="LineNumber" type="id_String" xpath="Out1/LineNumber"/>
-        <nodes name="type5" type="id_String" xpath="Out1/type5"/>
-        <nodes name="ProductDescription" type="id_String" xpath="Out1/ProductDescription"/>
-        <nodes name="Quantity" type="id_Object" xpath="Out1/Quantity"/>
-        <nodes name="Unit" type="id_String" xpath="Out1/Unit"/>
-        <nodes name="type6" type="id_String" xpath="Out1/type6"/>
-        <nodes name="type7" type="id_String" xpath="Out1/type7"/>
-        <nodes name="DocumentNumber1" type="id_Object" xpath="Out1/DocumentNumber1"/>
-        <nodes name="DateStamp2" type="id_String" xpath="Out1/DateStamp2"/>
-        <nodes name="LineNumber1" type="id_String" xpath="Out1/LineNumber1"/>
-        <nodes name="ComponentLineNumber" type="id_String" xpath="Out1/ComponentLineNumber"/>
-        <nodes name="Status" type="id_String" xpath="Out1/Status"/>
-        <nodes name="DateStamp3" type="id_String" xpath="Out1/DateStamp3"/>
-        <nodes name="Quantity1" type="id_Object" xpath="Out1/Quantity1"/>
-      </outputTrees>
-      <varTables name="Var" minimized="true"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.11/@nodeData/@inputTrees.0/@nodes.1" target="//@node.11/@nodeData/@outputTrees.0/@nodes.8"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.11/@nodeData/@inputTrees.0/@nodes.4" target="//@node.11/@nodeData/@outputTrees.0/@nodes.8"/>
-    </nodeData>
-  </node>
-  <node componentName="tFileOutputXML" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="560" posY="200">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputXML_5" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/AlexHocquigny/Documents/UFP/Target Files/OrderResponseTextTest.xml&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/AlexHocquigny/Documents/UFP/Target Files/OrderResponseHeader.xml&quot;"/>
     <elementParameter field="CHECK" name="INPUT_IS_DOCUMENT" value="false"/>
     <elementParameter field="COLUMN_LIST" name="DOCUMENT_COL" value="SenderID" show="false"/>
     <elementParameter field="TEXT" name="ROW_TAG" value="&quot;row&quot;"/>
@@ -2213,7 +2212,7 @@
       <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="26"/>
       <elementValue elementRef="LABEL" value="&quot;label&quot;" id="27"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="type" id="28"/>
-      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="29"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="true" id="29"/>
       <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="30"/>
       <elementValue elementRef="LABEL" value="&quot;label&quot;" id="31"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="DocumentNumber" id="32"/>
@@ -2365,7 +2364,7 @@
     <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
     <elementParameter field="CHECK" name="TRIM" value="false" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="metadata" name="tFileOutputXML_5">
+    <metadata connector="FLOW" label="metadata" name="tFileOutputXML_1">
       <column comment="" key="false" length="0" name="SenderID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="ReceiverID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="DateStamp" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -2410,14 +2409,17 @@
       <column comment="" key="false" length="0" name="Quantity1" nullable="true" originalDbColumnName="Quantity" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Object" usefulColumn="true"/>
     </metadata>
   </node>
-  <connection connectorName="FLOW" label="copyOfORL" lineStyle="0" metaname="copyOfORL" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tFileInputMSPositional_2" target="tAdvancedFileOutputXML_1">
+  <connection connectorName="FLOW" label="copyOfORH" lineStyle="0" metaname="copyOfORH" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tFileInputMSPositional_2" target="tXMLMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfORH" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="copyOfORL" lineStyle="0" metaname="copyOfORL" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tFileInputMSPositional_2" target="tAdvancedFileOutputXML_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfORL" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="copyOfORH" lineStyle="0" metaname="copyOfORH" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tFileInputMSPositional_2" target="tXMLMap_1">
+  <connection connectorName="FLOW" label="Out1" lineStyle="0" metaname="Out1" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tFileOutputXML_5">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfORH" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Out1" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="Header1" lineStyle="0" metaname="Header1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tFileOutputXML_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -2438,11 +2440,6 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Invoice" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="Out1" lineStyle="0" metaname="Out1" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tFileOutputXML_5">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Out1" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputMSPositional_1" show="false"/>
@@ -2475,7 +2472,7 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_1" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputXML_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
