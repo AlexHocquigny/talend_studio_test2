@@ -1,0 +1,2 @@
+SenderID,ReceiverID,DateStamp,VersionID,ControlNumber,Test,DocumentType,type,DocumentNumber,DateStamp1,type1,type2,PartnerName1,PartnerName2,PartnerName3,PartnerName4,PartnerAddress,PartnerPostalCode,PartnerCity,PartnerCountryCode,type3,ContactName,ContactName2,ContactPhone,ContactFax,ContactMail,CompleteDelivery,type4,LineNumber,type5,ProductDescription,Quantity,Unit,type6,type7,DocumentNumber1,DateStamp2,LineNumber1,ComponentLineNumber,Status,DateStamp3,Quantity1
+,,,,,,,,7333665001,20250113,,,UFP (UK) Limited,,,,,,Bradford,,,,,,,,,,,,,,,,,,,,,,,

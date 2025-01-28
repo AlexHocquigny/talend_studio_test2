@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:XmlFileConnection xmi:id="_T8I7ANmNEe-Jn68e2TVSlw" name="OrderResponse" dataPackage="_T8I7NtmNEe-Jn68e2TVSlw" inputModel="false" outputFilePath="C:/Users/AlexHocquigny/Documents/UFP/Target Files/Output/OrderResponseFullTest2.xml">
+    <root xmi:id="_7UtVcNmQEe-Jn68e2TVSlw" XMLPath="/OrderResponse" RelatedColumn="" Attribute="main" Order="1"/>
+    <root xmi:id="_7UtVcdmQEe-Jn68e2TVSlw" XMLPath="/OrderResponse/SenderEnvelope" RelatedColumn="" Attribute="branch" Order="1"/>
+    <root xmi:id="_7UtVctmQEe-Jn68e2TVSlw" XMLPath="/OrderResponse/SenderEnvelope/SenderID" RelatedColumn="rootTag" Attribute="branch" Order="2"/>
+    <root xmi:id="_7UtVc9mQEe-Jn68e2TVSlw" XMLPath="/OrderResponse/SenderEnvelope/ReceiverID" RelatedColumn="ReceiverID" Attribute="branch" Order="3"/>
+    <root xmi:id="_7UtVdNmQEe-Jn68e2TVSlw" XMLPath="/OrderResponse/SenderEnvelope/VersionID" RelatedColumn="VersionID" Attribute="branch" Order="4"/>
+    <root xmi:id="_7UtVddmQEe-Jn68e2TVSlw" XMLPath="/OrderResponse/SenderEnvelope/ControlNumber" RelatedColumn="ControlNumber" Attribute="branch" Order="5"/>
+    <root xmi:id="_7UtVdtmQEe-Jn68e2TVSlw" XMLPath="/OrderResponse/SenderEnvelope/Test" RelatedColumn="Test" Attribute="branch" Order="6"/>
+    <root xmi:id="_7UtVd9mQEe-Jn68e2TVSlw" XMLPath="/OrderResponse/Header" RelatedColumn="" Attribute="branch" Order="7"/>
+    <root xmi:id="_7UtVeNmQEe-Jn68e2TVSlw" XMLPath="/OrderResponse/Header/DocumentType" RelatedColumn="DocumentType" Attribute="branch" Order="8"/>
+    <root xmi:id="_7UtVedmQEe-Jn68e2TVSlw" XMLPath="/OrderResponse/Header/DocumentReference" RelatedColumn="" Attribute="branch" Order="9"/>
+    <root xmi:id="_7UtVetmQEe-Jn68e2TVSlw" XMLPath="type=&quot;SalesOrder&quot;" RelatedColumn="type__SalesOrder_" Attribute="attri" Order="10"/>
+    <root xmi:id="_7UtVe9mQEe-Jn68e2TVSlw" XMLPath="/OrderResponse/Header/DocumentReference/DocumentNumber" RelatedColumn="DocumentNumber" Attribute="branch" Order="11"/>
+    <root xmi:id="_7UtVfNmQEe-Jn68e2TVSlw" XMLPath="/OrderResponse/Header/DocumentReference/DateStamp" RelatedColumn="DateStamp" Attribute="branch" Order="12"/>
+    <root xmi:id="_7UtVfdmQEe-Jn68e2TVSlw" XMLPath="/OrderResponse/Header/DocumentReference" RelatedColumn="" Attribute="branch" Order="13"/>
+    <root xmi:id="_7UtVftmQEe-Jn68e2TVSlw" XMLPath="type=&quot;PurchaseOrder&quot;" RelatedColumn="type__PurchaseOrder_" Attribute="attri" Order="14"/>
+    <root xmi:id="_7UtVf9mQEe-Jn68e2TVSlw" XMLPath="/OrderResponse/Header/DocumentReference/DocumentNumber" RelatedColumn="DocumentNumber1" Attribute="branch" Order="15"/>
+    <root xmi:id="_7UtVgNmQEe-Jn68e2TVSlw" XMLPath="/OrderResponse/Header/DocumentReference/DateStamp" RelatedColumn="DateStamp1" Attribute="branch" Order="16"/>
+    <root xmi:id="_7UtVgdmQEe-Jn68e2TVSlw" XMLPath="/OrderResponse/Header/PartnerDescription" RelatedColumn="" Attribute="branch" Order="17"/>
+    <root xmi:id="_7UtVgtmQEe-Jn68e2TVSlw" XMLPath="/OrderResponse/Header/PartnerDescription/PartnerNumber" RelatedColumn="" Attribute="branch" Order="18"/>
+    <root xmi:id="_7UtVg9mQEe-Jn68e2TVSlw" XMLPath="type=&quot;Buyer&quot;" RelatedColumn="type__Buyer_" Attribute="attri" Order="19"/>
+    <root xmi:id="_7UtVhNmQEe-Jn68e2TVSlw" XMLPath="/OrderResponse/Header/PartnerDescription/PartnerNumber/ContactInformation" RelatedColumn="" Attribute="branch" Order="20"/>
+    <root xmi:id="_7UtVhdmQEe-Jn68e2TVSlw" XMLPath="type=&quot;Buyer&quot;" RelatedColumn="type__Buyer_1" Attribute="attri" Order="21"/>
+    <root xmi:id="_7UtVhtmQEe-Jn68e2TVSlw" XMLPath="/OrderResponse/Header/PartnerDescription/PartnerNumber/ContactInformation/ContactPhone" RelatedColumn="ContactPhone" Attribute="branch" Order="22"/>
+    <root xmi:id="_7UtVh9mQEe-Jn68e2TVSlw" XMLPath="/OrderResponse/Header/PartnerDescription/PartnerNumber/ContactInformation/ContactMail" RelatedColumn="ContactMail" Attribute="branch" Order="23"/>
+    <root xmi:id="_7UtViNmQEe-Jn68e2TVSlw" XMLPath="/OrderResponse/Header/PartnerDescription" RelatedColumn="" Attribute="branch" Order="24"/>
+    <root xmi:id="_7UtVidmQEe-Jn68e2TVSlw" XMLPath="/OrderResponse/Header/PartnerDescription/PartnerNumber" RelatedColumn="" Attribute="branch" Order="25"/>
+    <root xmi:id="_7UtVitmQEe-Jn68e2TVSlw" XMLPath="type=&quot;ShipTo&quot;" RelatedColumn="type__ShipTo_" Attribute="attri" Order="26"/>
+    <root xmi:id="_7UtVi9mQEe-Jn68e2TVSlw" XMLPath="/OrderResponse/Header/PartnerDescription/PartnerName1" RelatedColumn="PartnerName1" Attribute="branch" Order="27"/>
+    <root xmi:id="_7UtVjNmQEe-Jn68e2TVSlw" XMLPath="/OrderResponse/Header/PartnerDescription/PartnerName2" RelatedColumn="PartnerName2" Attribute="branch" Order="28"/>
+    <root xmi:id="_7UtVjdmQEe-Jn68e2TVSlw" XMLPath="/OrderResponse/Header/PartnerDescription/PartnerPostalCode" RelatedColumn="PartnerPostalCode" Attribute="branch" Order="29"/>
+    <root xmi:id="_7UtVjtmQEe-Jn68e2TVSlw" XMLPath="/OrderResponse/Header/PartnerDescription/PartnerCity" RelatedColumn="PartnerCity" Attribute="branch" Order="30"/>
+    <root xmi:id="_7UtVj9mQEe-Jn68e2TVSlw" XMLPath="/OrderResponse/Header/CompleteDelivery" RelatedColumn="CompleteDelivery" Attribute="branch" Order="31"/>
+    <loop xmi:id="_7UtVkNmQEe-Jn68e2TVSlw" XMLPath="/OrderResponse/LineItem" RelatedColumn="" Attribute="main" Order="32"/>
+    <loop xmi:id="_7UtVkdmQEe-Jn68e2TVSlw" XMLPath="/OrderResponse/LineItem/LineNumber" RelatedColumn="LineNumber" Attribute="branch" Order="33"/>
+    <loop xmi:id="_7UtVktmQEe-Jn68e2TVSlw" XMLPath="/OrderResponse/LineItem/ProductNumber" RelatedColumn="" Attribute="branch" Order="34"/>
+    <loop xmi:id="_7UtVk9mQEe-Jn68e2TVSlw" XMLPath="type=&quot;Buyer&quot;" RelatedColumn="type__Buyer_2" Attribute="attri" Order="35"/>
+    <loop xmi:id="_7UtVlNmQEe-Jn68e2TVSlw" XMLPath="/OrderResponse/LineItem/ProductNumber" RelatedColumn="" Attribute="branch" Order="36"/>
+    <loop xmi:id="_7UtVldmQEe-Jn68e2TVSlw" XMLPath="type=&quot;Distributor&quot;" RelatedColumn="type__Distributor_" Attribute="attri" Order="37"/>
+    <loop xmi:id="_7UtVltmQEe-Jn68e2TVSlw" XMLPath="/OrderResponse/LineItem/ProductNumber" RelatedColumn="" Attribute="branch" Order="38"/>
+    <loop xmi:id="_7UtVl9mQEe-Jn68e2TVSlw" XMLPath="type=&quot;EAN&quot;" RelatedColumn="type__EAN_" Attribute="attri" Order="39"/>
+    <loop xmi:id="_7UtVmNmQEe-Jn68e2TVSlw" XMLPath="/OrderResponse/LineItem/ProductDescription" RelatedColumn="ProductDescription" Attribute="branch" Order="40"/>
+    <loop xmi:id="_7UtVmdmQEe-Jn68e2TVSlw" XMLPath="/OrderResponse/LineItem/Quantity" RelatedColumn="Quantity" Attribute="branch" Order="41"/>
+    <loop xmi:id="_7UtVmtmQEe-Jn68e2TVSlw" XMLPath="/OrderResponse/LineItem/MonetaryAmount" RelatedColumn="" Attribute="branch" Order="42"/>
+    <loop xmi:id="_7UtVm9mQEe-Jn68e2TVSlw" XMLPath="type=&quot;NetCustomer&quot;" RelatedColumn="type__NetCustomer_" Attribute="attri" Order="43"/>
+    <loop xmi:id="_7UtVnNmQEe-Jn68e2TVSlw" XMLPath="/OrderResponse/LineItem/DocumentReference" RelatedColumn="" Attribute="branch" Order="44"/>
+    <loop xmi:id="_7UtVndmQEe-Jn68e2TVSlw" XMLPath="type=&quot;PurchaseOrder&quot;" RelatedColumn="type__PurchaseOrder_1" Attribute="attri" Order="45"/>
+    <loop xmi:id="_7UtVntmQEe-Jn68e2TVSlw" XMLPath="/OrderResponse/LineItem/DocumentReference/DocumentNumber" RelatedColumn="DocumentNumber2" Attribute="branch" Order="46"/>
+    <loop xmi:id="_7UtVn9mQEe-Jn68e2TVSlw" XMLPath="/OrderResponse/LineItem/DocumentReference/DateStamp" RelatedColumn="DateStamp2" Attribute="branch" Order="47"/>
+    <loop xmi:id="_7UtVoNmQEe-Jn68e2TVSlw" XMLPath="/OrderResponse/LineItem/DocumentReference/LineNumber" RelatedColumn="LineNumber1" Attribute="branch" Order="48"/>
+    <loop xmi:id="_7UtVodmQEe-Jn68e2TVSlw" XMLPath="/OrderResponse/LineItem/Schedule" RelatedColumn="" Attribute="branch" Order="49"/>
+    <loop xmi:id="_7UtVotmQEe-Jn68e2TVSlw" XMLPath="/OrderResponse/LineItem/Schedule/Status" RelatedColumn="Status" Attribute="branch" Order="50"/>
+    <loop xmi:id="_7UtVo9mQEe-Jn68e2TVSlw" XMLPath="/OrderResponse/LineItem/Schedule/DateStamp" RelatedColumn="DateStamp3" Attribute="branch" Order="51"/>
+    <loop xmi:id="_7UtVpNmQEe-Jn68e2TVSlw" XMLPath="/OrderResponse/LineItem/Schedule/Quantity" RelatedColumn="Quantity1" Attribute="branch" Order="52"/>
+  </TalendMetadata:XmlFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_T8I7NtmNEe-Jn68e2TVSlw" name="default" dataManager="_T8I7ANmNEe-Jn68e2TVSlw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_T8I7N9mNEe-Jn68e2TVSlw" id="_KVnHoNl3Ee-Jn68e2TVSlw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_T8I7ONmNEe-Jn68e2TVSlw" name="rootTag" label="rootTag" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J1ZfENmOEe-Jn68e2TVSlw" name="ReceiverID" label="ReceiverID" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J1ZfEdmOEe-Jn68e2TVSlw" name="VersionID" label="VersionID" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J1ZfEtmOEe-Jn68e2TVSlw" name="ControlNumber" label="ControlNumber" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J1ZfE9mOEe-Jn68e2TVSlw" name="Test" label="Test" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J1ZfFNmOEe-Jn68e2TVSlw" name="DocumentType" label="DocumentType" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J1ZfFdmOEe-Jn68e2TVSlw" name="type=&quot;SalesOrder&quot;" label="type__SalesOrder_" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J1ZfFtmOEe-Jn68e2TVSlw" name="DocumentNumber" label="DocumentNumber" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J1ZfF9mOEe-Jn68e2TVSlw" name="DateStamp" label="DateStamp" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J1ZfGNmOEe-Jn68e2TVSlw" name="type=&quot;PurchaseOrder&quot;" label="type__PurchaseOrder_" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J1ZfGdmOEe-Jn68e2TVSlw" name="DocumentNumber" label="DocumentNumber1" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J1ZfGtmOEe-Jn68e2TVSlw" name="DateStamp" label="DateStamp1" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J1ZfG9mOEe-Jn68e2TVSlw" name="type=&quot;Buyer&quot;" label="type__Buyer_" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J1ZfHNmOEe-Jn68e2TVSlw" name="type=&quot;Buyer&quot;" label="type__Buyer_1" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J1ZfHdmOEe-Jn68e2TVSlw" name="ContactPhone" label="ContactPhone" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J1ZfHtmOEe-Jn68e2TVSlw" name="ContactMail" label="ContactMail" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J1ZfH9mOEe-Jn68e2TVSlw" name="type=&quot;ShipTo&quot;" label="type__ShipTo_" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J1ZfINmOEe-Jn68e2TVSlw" name="PartnerName1" label="PartnerName1" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J1ZfIdmOEe-Jn68e2TVSlw" name="PartnerName2" label="PartnerName2" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J1ZfItmOEe-Jn68e2TVSlw" name="PartnerPostalCode" label="PartnerPostalCode" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J1ZfI9mOEe-Jn68e2TVSlw" name="PartnerCity" label="PartnerCity" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J1ZfJNmOEe-Jn68e2TVSlw" name="CompleteDelivery" label="CompleteDelivery" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J1ZfJdmOEe-Jn68e2TVSlw" name="LineNumber" label="LineNumber" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J1ZfJtmOEe-Jn68e2TVSlw" name="type=&quot;Buyer&quot;" label="type__Buyer_2" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J1ZfJ9mOEe-Jn68e2TVSlw" name="type=&quot;Distributor&quot;" label="type__Distributor_" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J1ZfKNmOEe-Jn68e2TVSlw" name="type=&quot;EAN&quot;" label="type__EAN_" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J1ZfKdmOEe-Jn68e2TVSlw" name="ProductDescription" label="ProductDescription" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J1ZfKtmOEe-Jn68e2TVSlw" name="Quantity" label="Quantity" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J1aGINmOEe-Jn68e2TVSlw" name="type=&quot;NetCustomer&quot;" label="type__NetCustomer_" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J1aGIdmOEe-Jn68e2TVSlw" name="type=&quot;PurchaseOrder&quot;" label="type__PurchaseOrder_1" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J1aGItmOEe-Jn68e2TVSlw" name="DocumentNumber" label="DocumentNumber2" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J1aGI9mOEe-Jn68e2TVSlw" name="DateStamp" label="DateStamp2" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J1aGJNmOEe-Jn68e2TVSlw" name="LineNumber" label="LineNumber1" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J1aGJdmOEe-Jn68e2TVSlw" name="Status" label="Status" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J1aGJtmOEe-Jn68e2TVSlw" name="DateStamp" label="DateStamp3" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J1aGJ9mOEe-Jn68e2TVSlw" name="Quantity" label="Quantity1" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<root>
+<row type="">
+<SenderID></SenderID>
+<ReceiverID></ReceiverID>
+<DateStamp></DateStamp>
+<VersionID></VersionID>
+<ControlNumber></ControlNumber>
+<Test></Test>
+<DocumentType></DocumentType>
+<DocumentNumber>7333665001</DocumentNumber>
+<DateStamp1>20250113</DateStamp1>
+<type1></type1>
+<type2></type2>
+<PartnerName1>UFP (UK) Limited</PartnerName1>
+<PartnerName2></PartnerName2>
+<PartnerName3></PartnerName3>
+<PartnerName4></PartnerName4>
+<PartnerAddress></PartnerAddress>
+<PartnerPostalCode></PartnerPostalCode>
+<PartnerCity>Bradford</PartnerCity>
+<PartnerCountryCode></PartnerCountryCode>
+<type3></type3>
+<ContactName></ContactName>
+<ContactName2></ContactName2>
+<ContactPhone></ContactPhone>
+<ContactFax></ContactFax>
+<ContactMail></ContactMail>
+<CompleteDelivery></CompleteDelivery>
+<type4></type4>
+<LineNumber></LineNumber>
+<type5></type5>
+<ProductDescription></ProductDescription>
+<Quantity></Quantity>
+<Unit></Unit>
+<type6></type6>
+<type7></type7>
+<DocumentNumber1></DocumentNumber1>
+<DateStamp2></DateStamp2>
+<LineNumber1></LineNumber1>
+<ComponentLineNumber></ComponentLineNumber>
+<Status></Status>
+<DateStamp3></DateStamp3>
+<Quantity1></Quantity1>
+</row>
+</root>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<root>
+<row>
+<RecType>ORH</RecType>
+<Ordernr>7333665001</Ordernr>
+<Ordersnr>00000</Ordersnr>
+<Orderdat>20250113</Orderdat>
+<ExOrdernr>4517667747</ExOrdernr>
+<ExtApplOrd>03961543</ExtApplOrd>
+<Orderref1>9000654614</Orderref1>
+<Orderref2></Orderref2>
+<Ordertxt1>NEXT DAY                      Next Day</Ordertxt1>
+<Ordertxt2></Ordertxt2>
+<Ordertxt3></Ordertxt3>
+<OrdType>CON</OrdType>
+<DelDate>20250113</DelDate>
+<SuppEAN>UFPUK</SuppEAN>
+<SuppCode></SuppCode>
+<SuppName1>UFP (UK) Limited</SuppName1>
+<SuppName2></SuppName2>
+<SuppAdrs1>Enterprise House</SuppAdrs1>
+<SuppAdrs2>Roydsdale Way</SuppAdrs2>
+<SuppCity>Bradford</SuppCity>
+<SuppZIP>BD4 6SE</SuppZIP>
+<SuppCntry>GB</SuppCntry>
+<SuppVATID>GB607254160</SuppVATID>
+<SuppKvKnr></SuppKvKnr>
+<BuyrEAN></BuyrEAN>
+<BuyrCode>00106082</BuyrCode>
+<BuyrName1>BECHTLE LTD</BuyrName1>
+<BuyrName2></BuyrName2>
+<BuyrAdrs1>TURNPIKE HOUSE</BuyrAdrs1>
+<BuyrAdrs2>METHUEN PARK</BuyrAdrs2>
+<BuyrCity>CHIPPENHAM WILTS</BuyrCity>
+<BuyrZIP>SN14 0GF</BuyrZIP>
+<BuyrCntry></BuyrCntry>
+<BuyrMAdrs></BuyrMAdrs>
+<BuyrMCity></BuyrMCity>
+<BuyrMZip></BuyrMZip>
+<BuyrVATID>GB699374267</BuyrVATID>
+<BuyrKvKnr>03283032</BuyrKvKnr>
+<DeliEAN></DeliEAN>
+<DeliCode>37617</DeliCode>
+<DeliName1>Bristol Port Company</DeliName1>
+<DeliName2>Jack Howarth - BPC318731</DeliName2>
+<DeliAdrs1>Saint Andrews House</DeliAdrs1>
+<DeliAdrs2></DeliAdrs2>
+<DeliCity>Avonmouth</DeliCity>
+<DeliZIP>BS11 9DQ</DeliZIP>
+<DeliCntry></DeliCntry>
+<DeliVATID>GB699374267</DeliVATID>
+<CostBearer></CostBearer>
+<Crddays>0</Crddays>
+<Crdperc>0</Crdperc>
+<Crdcode>N</Crdcode>
+<CostCtrNme></CostCtrNme>
+<CcdCard>0</CcdCard>
+<ColCcdCardNbr></ColCcdCardNbr>
+<CcdExpDt></CcdExpDt>
+<CcdCardType></CcdCardType>
+<CcdCardHold></CcdCardHold>
+<OrdCurrency></OrdCurrency>
+<OrdExcAmnt>41044</OrdExcAmnt>
+<OrdExcAmntS></OrdExcAmntS>
+<OrdVATAmnt>8209</OrdVATAmnt>
+<OrdVATAmntS></OrdVATAmntS>
+<OrdIncAmnt>49253</OrdIncAmnt>
+<OrdIncAmntS></OrdIncAmntS>
+<ShipToRef>4517667747</ShipToRef>
+<StructRef></StructRef>
+<BuyrMCntr></BuyrMCntr>
+</row>
+</root>

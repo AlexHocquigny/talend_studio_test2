@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:XmlFileConnection xmi:id="_c-JWsNpAEe-Jn68e2TVSlw" name="People" dataPackage="_c-JWtdpAEe-Jn68e2TVSlw" inputModel="false" outputFilePath="C:/Users/AlexHocquigny/Documents/UFP/Test Files/Result.xml">
+    <root xmi:id="_E7DPcNpTEe-Jn68e2TVSlw" XMLPath="/People" RelatedColumn="" Attribute="main" Order="1"/>
+    <loop xmi:id="_E7DPcdpTEe-Jn68e2TVSlw" XMLPath="/People/Name" RelatedColumn="" Attribute="main" Order="1"/>
+    <loop xmi:id="_E7DPctpTEe-Jn68e2TVSlw" XMLPath="/People/Name/Height" RelatedColumn="Height" Attribute="branch" Order="2" Type="id_String"/>
+    <loop xmi:id="_E7DPc9pTEe-Jn68e2TVSlw" XMLPath="/People/Name/Age" RelatedColumn="Age" Attribute="branch" Order="3" Type="id_String"/>
+  </TalendMetadata:XmlFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_c-JWtdpAEe-Jn68e2TVSlw" name="default" dataManager="_c-JWsNpAEe-Jn68e2TVSlw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_c-JWttpAEe-Jn68e2TVSlw" id="_E3k_UNpAEe-Jn68e2TVSlw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_c-JWt9pAEe-Jn68e2TVSlw" name="People" label="People" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_c-JWuNpAEe-Jn68e2TVSlw" name="Name" label="Name" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_c-JWudpAEe-Jn68e2TVSlw" name="Height" label="Height" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_c-JWutpAEe-Jn68e2TVSlw" name="Age" label="Age" talendType="id_String"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

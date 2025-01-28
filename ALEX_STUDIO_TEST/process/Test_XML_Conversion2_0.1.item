@@ -1,0 +1,1256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" hide="false" name="Default"/>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:3XL5kSJZCcHmGHkHS3T/qdL956iUhdMcRrUoz7S7" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/AlexHocquigny/Documents/Talend/Talend-Studio-20240527_1700-V8.0.1/Talend-Studio-20240527_1700-V8.0.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="JDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:9290w0mGQ8BrFTa1jS3Sj6BNYSeCpib3JQ8BNehW" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+  </parameters>
+  <node componentName="tFileInputMSPositional" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="200" posY="240" sizeX="41" sizeY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputMSPositional_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="FILE" name="FILE_NAME" value="&quot;C:/Users/AlexHocquigny/Documents/UFP/Source Files/RSALCON0004&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="HEADER_RECORD_POSITION" value="&quot;0-3&quot;"/>
+    <elementParameter field="LABEL" name="HEADER_RECORD_POSITION_LBL" value="start-end for example for first 3 characters: &quot;0-3&quot;"/>
+    <elementParameter field="TABLE" name="SCHEMAS">
+      <elementValue elementRef="SCHEMA" value="copyOfORT" id="0"/>
+      <elementValue elementRef="HEADER" value="&quot;ORT&quot;" id="1"/>
+      <elementValue elementRef="PATTERN" value="&quot;3,10,5,5,5,60&quot;" id="2"/>
+      <elementValue elementRef="CHECK_ROW_SIZE" value="false" id="3"/>
+      <elementValue elementRef="PARENT_ROW" value="" id="4"/>
+      <elementValue elementRef="PARENT_KEY_COLUMN" value="" id="5"/>
+      <elementValue elementRef="KEY_COLUMN" value="" id="6"/>
+      <elementValue elementRef="SCHEMA" value="copyOfORH" id="7"/>
+      <elementValue elementRef="HEADER" value="&quot;ORH&quot;" id="8"/>
+      <elementValue elementRef="PATTERN" value="&quot;3,10,5,8,12,15,30,30,60,60,60,3,8,14,14,30,30,30,30,20,12,4,15,20,14,14,30,30,30,30,20,12,4,30,20,12,15,20,14,14,30,30,30,30,20,12,4,15,8,3,5,1,30,1,16,4,3,16,4,15,1,15,1,15,1,15,60,4&quot;" id="9"/>
+      <elementValue elementRef="CHECK_ROW_SIZE" value="false" id="10"/>
+      <elementValue elementRef="PARENT_ROW" value="" id="11"/>
+      <elementValue elementRef="PARENT_KEY_COLUMN" value="" id="12"/>
+      <elementValue elementRef="KEY_COLUMN" value="" id="13"/>
+      <elementValue elementRef="SCHEMA" value="copyOfINV" id="14"/>
+      <elementValue elementRef="HEADER" value="&quot;INV&quot;" id="15"/>
+      <elementValue elementRef="PATTERN" value="&quot;3,35,35,35,35,12,35,5,35,100,100,35,35,20,1&quot;" id="16"/>
+      <elementValue elementRef="CHECK_ROW_SIZE" value="false" id="17"/>
+      <elementValue elementRef="PARENT_ROW" value="" id="18"/>
+      <elementValue elementRef="PARENT_KEY_COLUMN" value="" id="19"/>
+      <elementValue elementRef="KEY_COLUMN" value="" id="20"/>
+      <elementValue elementRef="SCHEMA" value="copyOfORL" id="21"/>
+      <elementValue elementRef="HEADER" value="&quot;ORL&quot;" id="22"/>
+      <elementValue elementRef="PATTERN" value="&quot;3,10,5,5,5,5,14,14,14,30,15,1,15,1,8,15,1,9,1,3,3,5,3,3,15,1,30,1,5,15,60,10,1,1&quot;" id="23"/>
+      <elementValue elementRef="CHECK_ROW_SIZE" value="false" id="24"/>
+      <elementValue elementRef="PARENT_ROW" value="" id="25"/>
+      <elementValue elementRef="PARENT_KEY_COLUMN" value="" id="26"/>
+      <elementValue elementRef="KEY_COLUMN" value="" id="27"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="HEADER" value="0"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value="-1"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_UNKNOWN_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PROCESS_LONG_ROW" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="true"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="10" name="errorCode" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="line" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="metadata" name="copyOfORT">
+      <column comment="" key="false" length="-1" name="RecType" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Ordernr" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Ordersnr" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Orderssnr" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Orderline" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="text" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="ORH" name="copyOfORH">
+      <column comment="" key="false" length="3" name="RecType" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Ordernr" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="Ordersnr" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="18" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Orderdat" nullable="false" pattern="YYYYMMDD" precision="-1" sourceType="" type="id_String" originalLength="26" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="ExOrdernr" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="38" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="ExtApplOrd" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="53" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Orderref1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Orderref2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="Ordertxt1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="60" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="Ordertxt2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="60" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="Ordertxt3" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="60" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="OrdType" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DelDate" nullable="true" pattern="YYYYMMDD" precision="-1" sourceType="" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="SuppEAN" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="14" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="SuppCode" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="14" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="SuppName1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="SuppName2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="SuppAdrs1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="SuppAdrs2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="SuppCity" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="SuppZIP" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="12" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="SuppCntry" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="4" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="SuppVATID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="SuppKvKnr" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="BuyrEAN" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="14" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="BuyrCode" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="14" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="BuyrName1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="BuyrName2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="BuyrAdrs1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="BuyrAdrs2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="BuyrCity" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="BuyrZIP" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="12" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="BuyrCntry" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="4" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="BuyrMAdrs" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="BuyrMCity" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="BuyrMZip" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="12" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="BuyrVATID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="BuyrKvKnr" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="DeliEAN" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="14" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="DeliCode" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="14" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="DeliName1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="DeliName2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="DeliAdrs1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="DeliAdrs2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="DeliCity" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="DeliZIP" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="12" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="DeliCntry" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="4" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="DeliVATID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="CostBearer" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Crddays" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="Crdperc" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="5" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Crdcode" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="CostCtrNme" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="CcdCard" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="ColCcdCardNbr" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="16" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="CcdExpDt" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="4" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CcdCardType" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="CcdCardHold" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="16" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="OrdCurrency" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="4" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="OrdExcAmnt" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="15" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="OrdExcAmntS" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="OrdVATAmnt" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="15" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="OrdVATAmntS" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="OrdIncAmnt" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="15" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="OrdIncAmntS" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="ShipToRef" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="StructRef" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="60" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="BuyrMCntr" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="4" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="INV" name="copyOfINV">
+      <column comment="" key="false" length="-1" name="RecordType" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InvoiceAddressName1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InvoiceAddressName2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InvoiceAddressStreet1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InvoiceAddressStreet2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InvoiceAddressZipcode" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InvoiceAddressCity" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InvoiceAddressCountryCode" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InvoiceAddressCountryName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InvoiceAddressEmailTo" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InvoiceAddressEmailCc" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InvoiceAddressTelephone" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InvoiceAddressFax" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InvoiceAddressID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InvoiceAddressUseType" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="ORL" name="copyOfORL">
+      <column comment="" key="false" length="-1" name="RecType" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Ordernr" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Ordersnr" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Orderssnr" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Orderline" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ExtApplLin" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ProdEAN" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ProdSup" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ProdCus" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ProdDescr" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OrdQuant" nullable="false" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OrdQuantS" nullable="true" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AllQuant" nullable="false" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AllQuantS" nullable="true" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EstDelDat" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NettAmnt" nullable="false" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NettAmntS" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="QuaPBase" nullable="true" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="QuaPBaseS" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UntPBase" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="VATCode" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="VATPerc" nullable="false" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Uom1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Uom2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="GrssAmnt" nullable="false" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="GrssAmntS" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="VerpDescr" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Emballage" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ExternalOrderLineNumber" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UnitPrice" nullable="false" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="StructuredReference" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OwnApplLin" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LineType" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LineOnDoc" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputXML" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="360" posY="120">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputXML_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/AlexHocquigny/Documents/UFP/Target Files/OrderResponseText2.xml&quot;"/>
+    <elementParameter field="CHECK" name="INPUT_IS_DOCUMENT" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="DOCUMENT_COL" value="RecType" show="false"/>
+    <elementParameter field="TEXT" name="ROW_TAG" value="&quot;row&quot;"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="TABLE" name="ROOT_TAGS"/>
+    <elementParameter field="TABLE" name="MAPPING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="RecType" id="0"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="2"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Ordernr" id="4"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="6"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Ordersnr" id="8"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="10"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Orderssnr" id="12"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="14"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Orderline" id="16"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="18"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="text" id="20"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="22"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="23"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_GROUPING" value="false"/>
+    <elementParameter field="TABLE" name="GROUP_BY" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="TRIM" value="false" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileOutputXML_1">
+      <column comment="" key="false" length="-1" name="RecType" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Ordernr" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Ordersnr" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Orderssnr" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Orderline" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="text" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputXML" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="360" posY="200">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputXML_2" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/AlexHocquigny/Documents/UFP/Target Files/OrderResponseHeader2.xml&quot;"/>
+    <elementParameter field="CHECK" name="INPUT_IS_DOCUMENT" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="DOCUMENT_COL" value="RecType" show="false"/>
+    <elementParameter field="TEXT" name="ROW_TAG" value="&quot;row&quot;"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="TABLE" name="ROOT_TAGS"/>
+    <elementParameter field="TABLE" name="MAPPING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="RecType" id="0"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="2"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Ordernr" id="4"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="6"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Ordersnr" id="8"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="10"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Orderdat" id="12"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="14"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ExOrdernr" id="16"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="18"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ExtApplOrd" id="20"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="22"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Orderref1" id="24"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="26"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Orderref2" id="28"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="30"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Ordertxt1" id="32"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="33"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="34"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Ordertxt2" id="36"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="37"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="38"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="39"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Ordertxt3" id="40"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="41"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="42"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="43"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrdType" id="44"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="45"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="46"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="47"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DelDate" id="48"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="49"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="50"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="51"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SuppEAN" id="52"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="53"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="54"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="55"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SuppCode" id="56"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="57"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="58"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="59"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SuppName1" id="60"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="61"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="62"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="63"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SuppName2" id="64"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="65"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="66"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="67"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SuppAdrs1" id="68"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="69"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="70"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="71"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SuppAdrs2" id="72"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="73"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="74"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="75"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SuppCity" id="76"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="77"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="78"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="79"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SuppZIP" id="80"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="81"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="82"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="83"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SuppCntry" id="84"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="85"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="86"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="87"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SuppVATID" id="88"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="89"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="90"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="91"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SuppKvKnr" id="92"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="93"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="94"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="95"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BuyrEAN" id="96"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="97"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="98"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="99"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BuyrCode" id="100"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="101"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="102"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="103"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BuyrName1" id="104"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="105"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="106"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="107"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BuyrName2" id="108"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="109"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="110"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="111"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BuyrAdrs1" id="112"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="113"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="114"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="115"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BuyrAdrs2" id="116"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="117"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="118"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="119"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BuyrCity" id="120"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="121"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="122"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="123"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BuyrZIP" id="124"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="125"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="126"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="127"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BuyrCntry" id="128"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="129"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="130"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="131"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BuyrMAdrs" id="132"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="133"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="134"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="135"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BuyrMCity" id="136"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="137"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="138"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="139"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BuyrMZip" id="140"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="141"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="142"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="143"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BuyrVATID" id="144"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="145"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="146"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="147"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BuyrKvKnr" id="148"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="149"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="150"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="151"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DeliEAN" id="152"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="153"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="154"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="155"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DeliCode" id="156"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="157"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="158"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="159"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DeliName1" id="160"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="161"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="162"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="163"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DeliName2" id="164"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="165"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="166"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="167"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DeliAdrs1" id="168"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="169"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="170"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="171"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DeliAdrs2" id="172"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="173"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="174"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="175"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DeliCity" id="176"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="177"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="178"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="179"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DeliZIP" id="180"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="181"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="182"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="183"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DeliCntry" id="184"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="185"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="186"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="187"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DeliVATID" id="188"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="189"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="190"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="191"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CostBearer" id="192"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="193"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="194"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="195"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Crddays" id="196"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="197"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="198"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="199"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Crdperc" id="200"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="201"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="202"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="203"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Crdcode" id="204"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="205"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="206"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="207"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CostCtrNme" id="208"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="209"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="210"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="211"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CcdCard" id="212"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="213"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="214"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="215"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ColCcdCardNbr" id="216"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="217"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="218"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="219"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CcdExpDt" id="220"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="221"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="222"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="223"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CcdCardType" id="224"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="225"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="226"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="227"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CcdCardHold" id="228"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="229"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="230"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="231"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrdCurrency" id="232"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="233"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="234"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="235"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrdExcAmnt" id="236"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="237"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="238"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="239"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrdExcAmntS" id="240"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="241"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="242"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="243"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrdVATAmnt" id="244"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="245"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="246"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="247"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrdVATAmntS" id="248"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="249"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="250"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="251"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrdIncAmnt" id="252"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="253"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="254"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="255"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrdIncAmntS" id="256"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="257"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="258"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="259"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShipToRef" id="260"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="261"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="262"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="263"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="StructRef" id="264"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="265"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="266"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="267"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BuyrMCntr" id="268"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="269"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="270"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="271"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_GROUPING" value="false"/>
+    <elementParameter field="TABLE" name="GROUP_BY" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="TRIM" value="false" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="ORH" name="tFileOutputXML_2">
+      <column comment="" key="false" length="3" name="RecType" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Ordernr" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="Ordersnr" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="18" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Orderdat" nullable="false" pattern="YYYYMMDD" precision="-1" sourceType="" type="id_String" originalLength="26" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="ExOrdernr" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="38" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="ExtApplOrd" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="53" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Orderref1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Orderref2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="Ordertxt1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="60" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="Ordertxt2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="60" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="Ordertxt3" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="60" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="OrdType" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DelDate" nullable="true" pattern="YYYYMMDD" precision="-1" sourceType="" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="SuppEAN" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="14" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="SuppCode" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="14" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="SuppName1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="SuppName2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="SuppAdrs1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="SuppAdrs2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="SuppCity" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="SuppZIP" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="12" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="SuppCntry" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="4" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="SuppVATID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="SuppKvKnr" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="BuyrEAN" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="14" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="BuyrCode" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="14" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="BuyrName1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="BuyrName2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="BuyrAdrs1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="BuyrAdrs2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="BuyrCity" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="BuyrZIP" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="12" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="BuyrCntry" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="4" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="BuyrMAdrs" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="BuyrMCity" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="BuyrMZip" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="12" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="BuyrVATID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="BuyrKvKnr" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="DeliEAN" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="14" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="DeliCode" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="14" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="DeliName1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="DeliName2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="DeliAdrs1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="DeliAdrs2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="DeliCity" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="DeliZIP" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="12" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="DeliCntry" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="4" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="DeliVATID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="CostBearer" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Crddays" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="Crdperc" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="5" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Crdcode" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="CostCtrNme" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="CcdCard" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="ColCcdCardNbr" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="16" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="CcdExpDt" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="4" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CcdCardType" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="CcdCardHold" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="16" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="OrdCurrency" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="4" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="OrdExcAmnt" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="15" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="OrdExcAmntS" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="OrdVATAmnt" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="15" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="OrdVATAmntS" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="OrdIncAmnt" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="15" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="OrdIncAmntS" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="ShipToRef" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="StructRef" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="60" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="BuyrMCntr" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="4" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputXML" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="360" posY="280">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputXML_3" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/AlexHocquigny/Documents/UFP/Target Files/OrderResponseInvoice2.xml&quot;"/>
+    <elementParameter field="CHECK" name="INPUT_IS_DOCUMENT" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="DOCUMENT_COL" value="RecordType" show="false"/>
+    <elementParameter field="TEXT" name="ROW_TAG" value="&quot;row&quot;"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="TABLE" name="ROOT_TAGS"/>
+    <elementParameter field="TABLE" name="MAPPING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="RecordType" id="0"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="2"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="InvoiceAddressName1" id="4"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="6"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="InvoiceAddressName2" id="8"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="10"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="InvoiceAddressStreet1" id="12"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="14"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="InvoiceAddressStreet2" id="16"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="18"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="InvoiceAddressZipcode" id="20"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="22"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="InvoiceAddressCity" id="24"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="26"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="InvoiceAddressCountryCode" id="28"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="30"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="InvoiceAddressCountryName" id="32"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="33"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="34"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="InvoiceAddressEmailTo" id="36"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="37"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="38"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="39"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="InvoiceAddressEmailCc" id="40"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="41"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="42"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="43"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="InvoiceAddressTelephone" id="44"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="45"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="46"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="47"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="InvoiceAddressFax" id="48"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="49"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="50"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="51"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="InvoiceAddressID" id="52"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="53"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="54"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="55"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="InvoiceAddressUseType" id="56"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="57"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="58"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="59"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_GROUPING" value="false"/>
+    <elementParameter field="TABLE" name="GROUP_BY" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="TRIM" value="false" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="INV" name="tFileOutputXML_3">
+      <column comment="" key="false" length="-1" name="RecordType" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InvoiceAddressName1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InvoiceAddressName2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InvoiceAddressStreet1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InvoiceAddressStreet2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InvoiceAddressZipcode" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InvoiceAddressCity" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InvoiceAddressCountryCode" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InvoiceAddressCountryName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InvoiceAddressEmailTo" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InvoiceAddressEmailCc" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InvoiceAddressTelephone" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InvoiceAddressFax" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InvoiceAddressID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InvoiceAddressUseType" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputXML" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="360" posY="360">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputXML_4" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/AlexHocquigny/Documents/UFP/Target Files/OrderResponseLine2.xml&quot;"/>
+    <elementParameter field="CHECK" name="INPUT_IS_DOCUMENT" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="DOCUMENT_COL" value="RecType" show="false"/>
+    <elementParameter field="TEXT" name="ROW_TAG" value="&quot;row&quot;"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="TABLE" name="ROOT_TAGS"/>
+    <elementParameter field="TABLE" name="MAPPING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="RecType" id="0"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="2"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Ordernr" id="4"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="6"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Ordersnr" id="8"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="10"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Orderssnr" id="12"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="14"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Orderline" id="16"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="18"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ExtApplLin" id="20"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="22"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProdEAN" id="24"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="26"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProdSup" id="28"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="30"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProdCus" id="32"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="33"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="34"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProdDescr" id="36"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="37"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="38"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="39"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrdQuant" id="40"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="41"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="42"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="43"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrdQuantS" id="44"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="45"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="46"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="47"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AllQuant" id="48"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="49"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="50"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="51"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AllQuantS" id="52"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="53"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="54"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="55"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EstDelDat" id="56"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="57"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="58"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="59"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NettAmnt" id="60"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="61"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="62"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="63"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NettAmntS" id="64"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="65"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="66"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="67"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QuaPBase" id="68"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="69"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="70"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="71"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QuaPBaseS" id="72"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="73"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="74"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="75"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UntPBase" id="76"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="77"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="78"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="79"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VATCode" id="80"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="81"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="82"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="83"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VATPerc" id="84"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="85"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="86"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="87"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Uom1" id="88"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="89"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="90"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="91"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Uom2" id="92"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="93"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="94"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="95"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GrssAmnt" id="96"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="97"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="98"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="99"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GrssAmntS" id="100"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="101"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="102"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="103"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VerpDescr" id="104"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="105"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="106"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="107"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Emballage" id="108"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="109"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="110"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="111"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ExternalOrderLineNumber" id="112"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="113"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="114"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="115"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UnitPrice" id="116"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="117"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="118"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="119"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="StructuredReference" id="120"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="121"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="122"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="123"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OwnApplLin" id="124"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="125"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="126"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="127"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LineType" id="128"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="129"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="130"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="131"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LineOnDoc" id="132"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="133"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="134"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="135"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_GROUPING" value="false"/>
+    <elementParameter field="TABLE" name="GROUP_BY" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="TRIM" value="false" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="ORL" name="tFileOutputXML_4">
+      <column comment="" key="false" length="-1" name="RecType" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Ordernr" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Ordersnr" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Orderssnr" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Orderline" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ExtApplLin" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ProdEAN" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ProdSup" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ProdCus" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ProdDescr" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OrdQuant" nullable="false" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OrdQuantS" nullable="true" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AllQuant" nullable="false" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AllQuantS" nullable="true" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EstDelDat" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NettAmnt" nullable="false" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NettAmntS" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="QuaPBase" nullable="true" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="QuaPBaseS" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UntPBase" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="VATCode" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="VATPerc" nullable="false" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Uom1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Uom2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="GrssAmnt" nullable="false" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="GrssAmntS" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="VerpDescr" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Emballage" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ExternalOrderLineNumber" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UnitPrice" nullable="false" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="StructuredReference" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OwnApplLin" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LineType" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LineOnDoc" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="520" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileList_1" show="false"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;C:/Users/AlexHocquigny/Documents/UFP/Target Files/XML Conversion 2&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="FILES"/>
+    <elementParameter field="CHECK" name="INCLUDSUBDIR" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="CASE_SENSITIVE" value="YES"/>
+    <elementParameter field="CHECK" name="ERROR" value="false"/>
+    <elementParameter field="CHECK" name="GLOBEXPRESSIONS" value="true"/>
+    <elementParameter field="TABLE" name="FILES"/>
+    <elementParameter field="RADIO" name="ORDER_BY_NOTHING" value="true"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILENAME" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILESIZE" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_MODIFIEDDATE" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_ASC" value="true"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_DESC" value="false"/>
+    <elementParameter field="CHECK" name="IFEXCLUDE" value="false"/>
+    <elementParameter field="TEXT" name="EXCLUDEFILEMASK" value="&quot;*.txt&quot;" show="false"/>
+    <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowToIterate_1" show="false"/>
+    <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
+    <elementParameter field="TABLE" name="MAP" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFlowToIterate_1"/>
+  </node>
+  <node componentName="tFileInputXML" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="760" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputXML_1" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/AlexHocquigny/Documents/Talend/Talend-Studio-20240527_1700-V8.0.1/Talend-Studio-20240527_1700-V8.0.1/workspace/in.xml&quot;"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/bills/bill/line&quot;"/>
+    <elementParameter field="TABLE" name="MAPPING"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="IGNORE_NS" value="false"/>
+    <elementParameter field="CHECK" name="IGNORE_DTD" value="false"/>
+    <elementParameter field="FILE" name="TMP_FILENAME" value="&quot;C:/Users/AlexHocquigny/Documents/Talend/Talend-Studio-20240527_1700-V8.0.1/Talend-Studio-20240527_1700-V8.0.1/workspace/temp.xml&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="FIELD_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="GENERATION_MODE" value="Dom4j"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileInputXML_1"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="880" posY="240" sizeX="41" sizeY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="Combined">
+      <column comment="" key="false" length="0" name="SenderID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ReceiverID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DateStamp" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="VersionID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ControlNumber" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Test" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DocumentType" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DocumentNumber" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Object" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DateStamp1" nullable="true" originalDbColumnName="DateStamp" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="type1" nullable="true" originalDbColumnName="type" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="type2" nullable="true" originalDbColumnName="type" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PartnerName1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PartnerName2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PartnerName3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PartnerName4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PartnerAddress" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PartnerPostalCode" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PartnerCity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PartnerCountryCode" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="type3" nullable="true" originalDbColumnName="type" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ContactName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ContactName2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ContactPhone" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ContactFax" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ContactMail" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CompleteDelivery" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="type4" nullable="true" originalDbColumnName="type" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="LineNumber" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="type5" nullable="true" originalDbColumnName="type" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ProductDescription" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Quantity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Object" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Unit" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="type6" nullable="true" originalDbColumnName="type" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="type7" nullable="true" originalDbColumnName="type" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DocumentNumber1" nullable="true" originalDbColumnName="DocumentNumber" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Object" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DateStamp2" nullable="true" originalDbColumnName="DateStamp" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="LineNumber1" nullable="true" originalDbColumnName="LineNumber" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ComponentLineNumber" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DateStamp3" nullable="true" originalDbColumnName="DateStamp" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Quantity1" nullable="true" originalDbColumnName="Quantity" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Object" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData"/>
+  </node>
+  <node componentName="tAdvancedFileOutputXML" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1000" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tAdvancedFileOutputXML_1" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/AlexHocquigny/Documents/Talend/Talend-Studio-20240527_1700-V8.0.1/Talend-Studio-20240527_1700-V8.0.1/workspace/out.xml&quot;"/>
+    <elementParameter field="TABLE" name="ROOT" show="false"/>
+    <elementParameter field="TABLE" name="GROUP" show="false"/>
+    <elementParameter field="TABLE" name="LOOP" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_ALcfENcZEe-Ch6ybbPAXXw - metadata" show="false"/>
+    <elementParameter field="CHECK" name="MERGE" value="false"/>
+    <elementParameter field="CHECK" name="PRETTY_COMPACT" value="false"/>
+    <elementParameter field="CHECK" name="FILE_VALID" value="false"/>
+    <elementParameter field="RADIO" name="DTD_VALID" value="true" show="false"/>
+    <elementParameter field="TEXT" name="DTD_NAME" value="&quot;Root&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DTD_SYSTEMID" value="&quot;Talend.dtd&quot;" show="false"/>
+    <elementParameter field="RADIO" name="XSL_VALID" value="false" show="false"/>
+    <elementParameter field="TEXT" name="XSL_TYPE" value="&quot;text/xsl&quot;" show="false"/>
+    <elementParameter field="TEXT" name="XSL_HREF" value="&quot;Talend.xsl&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="TRIM" value="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="CREATE_EMPTY_ELEMENT" value="true"/>
+    <elementParameter field="CHECK" name="ADD_EMPTY_ATTRIBUTE" value="false"/>
+    <elementParameter field="CHECK" name="ADD_UNMAPPED_ATTRIBUTE" value="false"/>
+    <elementParameter field="CHECK" name="ADD_DOCUMENT_AS_NODE" value="false"/>
+    <elementParameter field="CHECK" name="OUTPUT_AS_XSD" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="GENERATION_MODE" value="Dom4j"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="ADD_BLANK_LINE_AFTER_DECLARATION" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="XMLNODE_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tAdvancedFileOutputXML_1">
+      <column comment="" key="false" length="0" name="SenderID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ReceiverID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DateStamp" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="VersionID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ControlNumber" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Test" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DocumentType" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DocumentNumber" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Object" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DateStamp1" nullable="true" originalDbColumnName="DateStamp" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="type1" nullable="true" originalDbColumnName="type" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="type2" nullable="true" originalDbColumnName="type" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PartnerName1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PartnerName2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PartnerName3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PartnerName4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PartnerAddress" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PartnerPostalCode" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PartnerCity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PartnerCountryCode" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="type3" nullable="true" originalDbColumnName="type" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ContactName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ContactName2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ContactPhone" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ContactFax" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ContactMail" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CompleteDelivery" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="type4" nullable="true" originalDbColumnName="type" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="LineNumber" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="type5" nullable="true" originalDbColumnName="type" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ProductDescription" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Quantity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Object" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Unit" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="type6" nullable="true" originalDbColumnName="type" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="type7" nullable="true" originalDbColumnName="type" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DocumentNumber1" nullable="true" originalDbColumnName="DocumentNumber" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Object" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DateStamp2" nullable="true" originalDbColumnName="DateStamp" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="LineNumber1" nullable="true" originalDbColumnName="LineNumber" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ComponentLineNumber" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DateStamp3" nullable="true" originalDbColumnName="DateStamp" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Quantity1" nullable="true" originalDbColumnName="Quantity" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Object" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="copyOfORT" lineStyle="0" metaname="copyOfORT" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tFileInputMSPositional_1" target="tFileOutputXML_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfORT" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="copyOfORH" lineStyle="0" metaname="copyOfORH" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tFileInputMSPositional_1" target="tFileOutputXML_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfORH" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="copyOfINV" lineStyle="0" metaname="copyOfINV" offsetLabelX="0" offsetLabelY="0" outputId="3" source="tFileInputMSPositional_1" target="tFileOutputXML_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfINV" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="copyOfORL" lineStyle="0" metaname="copyOfORL" offsetLabelX="0" offsetLabelY="0" outputId="4" source="tFileInputMSPositional_1" target="tFileOutputXML_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfORL" show="false"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_1" offsetLabelX="0" offsetLabelY="0" source="tFlowToIterate_1" target="tFileInputXML_1">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputXML_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputXML_1" target="tXMLMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="Combined" lineStyle="0" metaname="Combined" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tAdvancedFileOutputXML_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Combined" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputMSPositional_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileList_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowToIterate_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+</talendfile:ProcessType>
